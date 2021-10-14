@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PhoneCallingSample</string>
+    <string name="jane_doe">Jane Doe</string>
+    <string name="_14155551212">14155551212</string>
+    <string name="phone_number">_14155551212</string>
+    <string name="make_a_call">Make a call</string>
+    <string name="retry">Retry</string>
+
+</resources>

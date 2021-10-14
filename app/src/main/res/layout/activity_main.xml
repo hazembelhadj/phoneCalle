@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:inputType="phone"
+        android:hint="Enter a phone number" />
+    <ImageButton
+        android:id="@+id/phone_icon"
+        android:contentDescription="@string/make_a_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:visibility="visible"
+        android:layout_toRightOf="@id/editText_main"
+        android:layout_toEndOf="@id/editText_main"
+
+        android:src="@drawable/ic_baseline_add_ic_call_24"
+        android:onClick="callNumber"/>
+    <Button
+        android:id="@+id/button_retry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/retry"
+        android:layout_below="@id/editText_main"
+        android:text="@string/retry"
+        android:visibility="invisible"
+        android:onClick="retryApp"/>
+</RelativeLayout>
